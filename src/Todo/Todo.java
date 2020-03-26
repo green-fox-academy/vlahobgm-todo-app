@@ -26,7 +26,7 @@ public class Todo {
 
     if (args.length == 2 && args[0].equals("-a")){
       FileHandler fileHandler = new FileHandler();
-
+      fileHandler.writeFile(args[1]);
     }
 
 

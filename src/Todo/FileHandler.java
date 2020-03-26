@@ -21,10 +21,11 @@ public class FileHandler {
     }
   }
 
-  public void writeFile(){
+  public void writeFile(String newLine){
     readFile();
+    content.add(newLine);
     try {
-      Files.write(filepath,newContent);
+      Files.write(filepath,content);
     } catch (IOException e) {
       e.printStackTrace();
     }
